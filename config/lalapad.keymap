@@ -11,7 +11,6 @@
 #define UNIQUE_WINDOWS_LAYER   3
 #define DEFAULT_IOS_LAYER   4
 #define UNIQUE_IOS_LAYER   5
-
 #define SECONDARY_LAYER 6
 #define TERTIARY_LAYER  7
 #define SYSTEM_LAYER    8
@@ -21,7 +20,6 @@
 #define SCROLL_L_LAYER  12
 
 // Mouse Scroll Value
-
 // cirque trackpad input&layer control
 
 &glidepoint_listener_R {
@@ -184,7 +182,6 @@
         };
 
         ////////////////////
-
         //Changed to allow toggle layers to be specified as ON/OFF
 
         tog_on: toggle_layer_on_only {
@@ -245,7 +242,7 @@
                          &allow_end    &allow_pagedown  &allow_home          &allow_pageup             &allow_pageup           &allow_home  &allow_pagedown  &allow_end
             >;
         };
-        
+
         UNIQUE_WINDOWS_LAYER {
             display-name = "Default";
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
@@ -315,7 +312,7 @@
 
             bindings = <
 &trans  &trans  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &bootloader  &sys_reset  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
+&trans  &trans  &trans  &trans  &bootloader  &sys_reset  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &mkp LCLK
 &trans  &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
 &trans  &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
                 &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans
