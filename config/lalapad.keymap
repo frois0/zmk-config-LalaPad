@@ -22,8 +22,6 @@
 
 // Mouse Scroll Value
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
-
 // cirque trackpad input&layer control
 
 &glidepoint_listener_R {
@@ -188,15 +186,6 @@
         ////////////////////
 
         //Changed to allow toggle layers to be specified as ON/OFF
-
-        lt_to_layer_0: lt_to_layer_0 {
-            compastible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
 
         tog_on: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
