@@ -259,7 +259,9 @@
 
         DEFAULT_MAC_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC LC(C_BRI_DEC)>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
 
             bindings = <
 &kp ESC           &kp Q             &kp W         &kp E            &kp R                        &kp T          &kp Y          &kp U                      &kp I            &kp O       &kp P           &mt EQUAL MINUS
@@ -272,7 +274,9 @@
 
         UNIQUE_MAC_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
 
             bindings = <
 &kp ESC           &kp Q             &kp P         &kp R            &kp D                        &kp C          &kp B          &kp K                      &kp U            &kp Y       &kp X      &mt EQUAL MINUS
@@ -285,7 +289,9 @@
 
         DEFAULT_WINDOWS_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRI_DEC>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
 
             bindings = <
 &kp ESC    &kp Q         &kp W         &kp E            &kp R                        &kp T          &kp Y          &kp U                      &kp I            &kp O       &kp P           &mt EQUAL MINUS
@@ -298,7 +304,9 @@
 
         UNIQUE_WINDOWS_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRI_DEC>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
 
             bindings = <
 &kp ESC    &kp Q         &kp P         &kp R            &kp D                        &kp C          &kp B          &kp K                      &kp U            &kp Y       &kp X      &mt EQUAL MINUS
@@ -340,9 +348,9 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&trans  &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &trans            &kp HOME        &kp UP_ARROW    &kp END          &trans            &trans
-&trans  &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp TAB           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_CONTROL  &trans
-&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp LEFT_COMMAND  &kp PAGE_UP     &kp LEFT_ALT    &kp PAGE_DOWN    &trans            &trans
+&trans  &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &trans            &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans            &trans
+&trans  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL     &kp TAB           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_CONTROL  &trans
+&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp LEFT_COMMAND  &kp C_AC_HOME   &kp LEFT_ALT    &kp END          &trans            &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &trans            &trans          &trans          &trans           &trans            &trans
                       &trans        &trans        &trans        &trans        &trans            &trans          &trans          &trans
             >;
@@ -352,7 +360,7 @@
             display-name = "symbol_layer";
             bindings = <
 &none  &kp PLUS     &kp CARET      &kp TILDE  &kp SINGLE_QUOTE   &kp ASTERISK  &kp DOLLAR     &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp AT_SIGN    &none
-&none  &kp EQUAL    &kp HASH       &kp COLON  &kp DOUBLE_QUOTES  &kp MINUS     &kp GRAVE      &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp SEMICOLON  &none
+&none  &kp MINUS    &kp HASH       &kp COLON  &kp DOUBLE_QUOTES  &kp EQUAL     &kp GRAVE      &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp SEMICOLON  &none
 &none  &kp PERCENT  &kp AMPERSAND  &kp PIPE   &kp EXCLAMATION    &kp SLASH     &kp BACKSLASH  &kp UNDERSCORE   &kp LESS_THAN          &kp GREATER_THAN   &kp QUESTION   &none
 &none  &none        &trans         &none      &none              &none         &none          &none            &none                  &none              &none          &none
                     &none          &none      &none              &none         &none          &none            &none                  &none
@@ -361,13 +369,15 @@
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&volume_up_down>;
 
             bindings = <
-&trans  &kp C_PREVIOUS    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans  &trans  &out OUT_TOG      &kp HOME        &kp UP_ARROW  &kp END    &trans            &Mac_bt
-&trans  &kp C_NEXT        &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans  &trans  &kp TAB           &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LEFT_CONTROL  &iPm_bt
-&trans  &kp C_PLAY_PAUSE  &kp C_MUTE         &trans                &trans  &trans  &kp LEFT_COMMAND  &mkp LCLK       &kp LEFT_ALT  &mkp RCLK  &trans            &iPh_bt
-&trans  &trans            &trans             &trans                &trans  &trans  &trans            &trans          &trans        &trans     &trans            &Win_bt
+&trans  &kp C_PREVIOUS    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans  &trans  &out OUT_TOG      &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &trans            &Mac_bt
+&trans  &kp C_NEXT        &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans  &trans  &kp TAB           &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp LEFT_CONTROL  &iPm_bt
+&trans  &kp C_PLAY_PAUSE  &kp C_MUTE         &trans                &trans  &trans  &kp LEFT_COMMAND  &mkp LCLK       &kp LEFT_ALT  &mkp RCLK      &trans            &iPh_bt
+&trans  &trans            &trans             &trans                &trans  &trans  &trans            &trans          &trans        &trans         &trans            &Win_bt
                           &trans             &trans                &trans  &trans  &trans            &trans          &trans        &trans
             >;
         };
