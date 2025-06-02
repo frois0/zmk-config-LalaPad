@@ -260,8 +260,8 @@
         DEFAULT_MAC_LAYER {
             display-name = "Default";
             sensor-bindings =
-                <&inc_dec_kp C_BRIGHTNESS_INC LC(C_BRI_DEC)>,
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRI_DEC>,
+                <&volume_up_down>;
 
             bindings = <
 &kp ESC           &kp Q             &kp W         &kp E            &kp R                        &kp T          &kp Y          &kp U                      &kp I            &kp O       &kp P           &mt EQUAL MINUS
@@ -276,7 +276,7 @@
             display-name = "Default";
             sensor-bindings =
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+                <&volume_up_down>;
 
             bindings = <
 &kp ESC           &kp Q             &kp P         &kp R            &kp D                        &kp C          &kp B          &kp K                      &kp U            &kp Y       &kp X      &mt EQUAL MINUS
@@ -291,7 +291,7 @@
             display-name = "Default";
             sensor-bindings =
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRI_DEC>,
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+                <&volume_up_down>;
 
             bindings = <
 &kp ESC    &kp Q         &kp W         &kp E            &kp R                        &kp T          &kp Y          &kp U                      &kp I            &kp O       &kp P           &mt EQUAL MINUS
@@ -306,7 +306,7 @@
             display-name = "Default";
             sensor-bindings =
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRI_DEC>,
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+                <&volume_up_down>;
 
             bindings = <
 &kp ESC    &kp Q         &kp P         &kp R            &kp D                        &kp C          &kp B          &kp K                      &kp U            &kp Y       &kp X      &mt EQUAL MINUS
@@ -345,7 +345,7 @@
 
         NUM-MOVE_LAYER {
             display-name = "num-move_layer";
-            sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
+            sensor-bindings = <&scroll_left_right>, <&volume_up_down>;
 
             bindings = <
 &trans  &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &trans            &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans            &trans
@@ -365,6 +365,8 @@
 &none  &none        &trans         &none      &none              &none         &none          &none            &none                  &none              &none          &none
                     &none          &none      &none              &none         &none          &none            &none                  &none
             >;
+
+            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
         };
 
         SYSTEM_LAYER {
