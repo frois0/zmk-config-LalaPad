@@ -376,10 +376,10 @@
                 <&volume_up_down>;
 
             bindings = <
-&trans  &kp C_PREVIOUS    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans  &trans  &out OUT_TOG      &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &trans            &Mac_bt
-&trans  &kp C_NEXT        &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans  &trans  &kp TAB           &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp LEFT_CONTROL  &iPm_bt
-&trans  &kp C_PLAY_PAUSE  &kp C_MUTE         &trans                &trans  &trans  &kp LEFT_COMMAND  &mkp LCLK       &kp LEFT_ALT  &mkp RCLK      &trans            &iPh_bt
-&trans  &trans            &trans             &trans                &trans  &trans  &trans            &trans          &trans        &trans         &trans            &Win_bt
+&trans  &kp C_PREVIOUS    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans  &trans  &out OUT_TOG      &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &kp LS(LG(LA(NUMBER_4)))  &Mac_bt
+&trans  &kp C_NEXT        &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans  &trans  &kp TAB           &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &trans                    &iPm_bt
+&trans  &kp C_PLAY_PAUSE  &kp C_MUTE         &trans                &trans  &trans  &kp LEFT_COMMAND  &mkp LCLK       &kp LEFT_ALT  &mkp RCLK      &trans                    &iPh_bt
+&trans  &trans            &trans             &trans                &trans  &trans  &kp ESCAPE        &trans          &trans        &trans         &trans                    &Win_bt
                           &trans             &trans                &trans  &trans  &trans            &trans          &trans        &trans
             >;
         };
