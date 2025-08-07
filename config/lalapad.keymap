@@ -11,7 +11,7 @@
 #define UNIQUE_WINDOWS_LAYER   3
 #define DEFAULT_IOS_LAYER   4
 #define UNIQUE_IOS_LAYER   5
-#define NUM-MOVE_LAYER 6
+#define NUM_MOVE_LAYER 6
 #define MAC_SYMBOL_LAYER  7
 #define WIN_SYMBOL_LAYER  8
 #define SYSTEM_LAYER    9
@@ -372,8 +372,8 @@
             >;
         };
 
-        NUM-MOVE_LAYER {
-            display-name = "num-move_layer";
+        NUM_MOVE_LAYER {
+            display-name = "num_move_layer";
             sensor-bindings = <&scroll_left_right>, <&volume_up_down>;
 
             bindings = <
