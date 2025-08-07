@@ -11,18 +11,19 @@
 #define UNIQUE_WINDOWS_LAYER   3
 #define DEFAULT_IOS_LAYER   4
 #define UNIQUE_IOS_LAYER   5
-#define SECONDARY_LAYER 6
-#define TERTIARY_LAYER  7
-#define SYSTEM_LAYER    8
-#define MOUSE_R_LAYER   9
-#define SCROLL_R_LAYER  10
-#define MOUSE_L_LAYER   11
-#define SCROLL_L_LAYER  12
+#define NUM-MOVE_LAYER 6
+#define MAC_SYMBOL_LAYER  7
+#define WIN_SYMBOL_LAYER  8
+#define SYSTEM_LAYER    9
+#define MOUSE_R_LAYER   10
+#define SCROLL_R_LAYER  11
+#define MOUSE_L_LAYER   12
+#define SCROLL_L_LAYER  13
 
 
 
 // OS設定を日本語キーボードのまま使用するための変換定義
-#define JP_DQUOTE       AT                // "
+#define JP_DQUOTE       AT                // 
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
 #define JP_EQUAL        UNDER             // =
