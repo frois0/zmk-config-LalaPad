@@ -19,6 +19,37 @@
 #define MOUSE_L_LAYER   11
 #define SCROLL_L_LAYER  12
 
+
+
+// OS設定を日本語キーボードのまま使用するための変換定義
+#define JP_DQUOTE       AT                // "
+#define JP_AMPERSAND    CARET             // &
+#define JP_QUOTE        AMPERSAND         // '
+#define JP_EQUAL        UNDER             // =
+#define JP_CARET        EQUAL             // ^
+#define JP_YEN          0x89              // ¥
+#define JP_PLUS         COLON             // +
+#define JP_TILDE        PLUS              // ~
+#define JP_PIPE         LS(0x89)          // |
+#define JP_AT           LEFT_BRACKET      // @
+#define JP_COLON        SINGLE_QUOTE      // :
+#define JP_ASTERISK     DOUBLE_QUOTES     // *
+#define JP_BACKQUOTE    LEFT_BRACE        // `
+#define JP_UNDERSCORE   LS(0x87)          // _
+#define JP_LBRACKET     RIGHT_BRACKET     // [
+#define JP_RBRACKET     BACKSLASH         // ]
+#define JP_LPAREN       ASTERISK          // (
+#define JP_RPAREN       LEFT_PARENTHESIS  // )
+#define JP_LBRACE       RIGHT_BRACE       // {
+#define JP_RBRACE       PIPE              // }
+#define JP_KANA         LANGUAGE_1        // かな
+#define JP_EISU         LANGUAGE_2        // 英数
+#define JP_HANZEN       GRAVE             // 半角/全角
+#define JP_BACKSLASH    LS(0x57)          // \
+
+
+
+
 // Mouse Scroll Value
 // cirque trackpad input&layer control
 
@@ -372,9 +403,9 @@
         WIN_SYMBOL_LAYER {
             display-name = "win_symbol_layer";
             bindings = <
-&none  &kp PLUS     &kp CARET      &kp TILDE  &kp SINGLE_QUOTE   &kp ASTERISK  &kp DOLLAR     &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp AT_SIGN    &none
-&none  &kp MINUS    &kp HASH       &kp COLON  &kp DOUBLE_QUOTES  &kp EQUAL     &kp GRAVE      &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp SEMICOLON  &none
-&none  &kp PERCENT  &kp AMPERSAND  &kp PIPE   &kp EXCLAMATION    &kp SLASH     &kp BACKSLASH  &kp UNDERSCORE   &kp LESS_THAN          &kp GREATER_THAN   &kp QUESTION   &none
+&none  &kp JP_PLUS  &kp JP_CARET     &kp JP_TILDE  &kp JP_QUOTE    &kp JP_ASTERISK  &kp DOLLAR       &kp JP_RBRACE     &kp JP_RPAREN  &kp JP_RBRACKET   &kp JP_AT     &none
+&none  &kp MINUS    &kp HASH         &kp JP_COLON  &kp JP_DQUOTE   &kp JP_EQUAL     &kp JP_BACKQUOTE &kp JP_LBRACE     &kp JP_LPAREN  &kp JP_LBRACKET   &kp SEMICOLON &none
+&none  &kp PERCENT  &kp JP_AMPERSAND &kp JP_PIPE   &kp EXCLAMATION &kp SLASH        &kp JP_BACKSLASH &kp JP_UNDERSCORE &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &none
 &none  &none        &trans         &none      &none              &none         &none          &none            &none                  &none              &none          &none
                     &none          &none      &none              &none         &none          &none            &none                  &none
             >;
