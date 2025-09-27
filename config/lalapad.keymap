@@ -47,8 +47,6 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 #define JP_BACKSLASH    LS(0x57)          // \
-#define Win_LCTRL      LEFT_WIN
-#define Win_LEFT_WIN    LCTRL
 
 
 // Mouse Scroll Value
@@ -329,7 +327,7 @@
 &kp ESC    &kp Q         &kp W         &kp E            &kp R                        &kp T          &kp Y          &kp U                      &kp I            &kp O       &kp P           &mt EQUAL MINUS
 &kp TAB    &kp A         &kp S         &kp D            &kp F                        &kp G          &kp H          &kp J                      &kp K            &kp L       &mt2 SEMI LBKT  &mt2 SQT RBKT
 &kp LSHFT  &kp Z         &kp X         &kp C            &kp V                        &kp B          &kp N          &kp M                      &kp COMMA        &kp PERIOD  &kp ENTER       &kp BSLH
-&kp Win_LEFT_WIN  &kp Win_LCTRL  &kp LEFT_ALT  &lt 6 BACKSPACE  &mt LEFT_WIN LANG2  &kp ESCAPE     &to 3          &mt LEFT_SHIFT  LANG1  &lt 7 SPACE      &trans      &mo 8           &trans
+&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &lt 6 BACKSPACE  &mt LEFT_WIN LANG2  &kp ESCAPE     &to 3          &mt LEFT_SHIFT  LANG1  &lt 7 SPACE      &trans      &mo 8           &trans
                          &allow_end    &allow_pagedown  &allow_home                  &allow_pageup  &allow_pageup  &allow_home                &allow_pagedown  &allow_end
             >;
         };
@@ -344,7 +342,7 @@
 &kp ESC    &kp Q         &kp P         &kp R            &kp D                        &kp C          &kp B          &kp K                      &kp U            &kp Y       &kp X      &mt EQUAL MINUS
 &kp TAB    &kp A         &kp T         &kp N            &kp S                        &kp W          &kp M          &kp H                      &kp E            &kp I       &kp O      &mt2 SQT RBKT
 &kp LSHFT  &none         &kp Z         &kp L            &kp G                        &kp J          &kp F          &kp V                      &kp COMMA        &kp PERIOD  &kp ENTER  &kp BSLH
-&kp Win_LEFT_WIN  &kp Win_LCTRL  &kp LEFT_ALT  &lt 6 BACKSPACE  &mt LEFT_WIN LANG2  &kp ESCAPE     &to 2          &mt LEFT_SHIFT LANG1  &lt 7 SPACE      &trans      &mo 8      &trans
+&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &lt 6 BACKSPACE  &mt LEFT_WIN LANG2  &kp ESCAPE     &to 2          &mt LEFT_SHIFT LANG1  &lt 7 SPACE      &trans      &mo 8      &trans
                          &allow_end    &allow_pagedown  &allow_home                  &allow_pageup  &allow_pageup  &allow_home                &allow_pagedown  &allow_end
             >;
         };
