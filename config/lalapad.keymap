@@ -81,13 +81,13 @@
         <&zip_xy_scaler 3 2>,
         <&zip_temp_layer MOUSE_L_LAYER 500>;
 
-    lowspeedmode {
-        layers = <SYSTEM_LAYER>;
-        input-processors =
-            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_xy_scaler 3 4>,
-            <&zip_temp_layer MOUSE_L_LAYER 500>;
-    };
+//    lowspeedmode {
+//        layers = <SYSTEM_LAYER>;
+//        input-processors =
+//            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+//            <&zip_xy_scaler 3 4>,
+//            <&zip_temp_layer MOUSE_L_LAYER 500>;
+//    };
 
     scroller {
         layers = <SCROLL_L_LAYER>;
@@ -342,7 +342,7 @@
 &kp ESC    &kp Q         &kp P         &kp R            &kp D                        &kp C          &kp B          &kp K                      &kp U            &kp Y       &kp X      &mt EQUAL MINUS
 &kp TAB    &kp A         &kp T         &kp N            &kp S                        &kp W          &kp M          &kp H                      &kp E            &kp I       &kp O      &mt2 SQT RBKT
 &kp LSHFT  &none         &kp Z         &kp L            &kp G                        &kp J          &kp F          &kp V                      &kp COMMA        &kp PERIOD  &kp ENTER  &kp BSLH
-&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &lt 6 BACKSPACE  &mt RCMD LANG2  &kp ESCAPE     &to 2          &mt LEFT_SHIFT LANG1  &lt 7 SPACE      &trans      &mo 9      &trans
+&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &lt 6 BACKSPACE  &mt RCTRL LANG2  &kp ESCAPE     &to 2          &mt LEFT_SHIFT LANG1  &lt 7 SPACE      &trans      &mo 9      &trans
                          &allow_end    &allow_pagedown  &allow_home                  &allow_pageup  &allow_pageup  &allow_home                &allow_pagedown  &allow_end
             >;
         };
