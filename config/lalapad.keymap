@@ -47,9 +47,8 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 #define JP_BACKSLASH    LS(0x57)          // \
-
-#define Win_LCTRL  　　　LEFT_WIN
-#define Win_LEFT_WIN  　LCTRL
+#define Win_LCTRL.      LEFT_WIN
+#define Win_LEFT_WIN    LCTRL
 
 
 // Mouse Scroll Value
